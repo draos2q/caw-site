@@ -1,0 +1,155 @@
+Un Manifeste sur un centre d'échange social décentralisé ...(alias) CAW 
+
+Le concept de décentralisation a été perdu pour certains d'entre nous au fil du temps, 
+ceux qui ont oublié pourquoi Bitcoin a été créé, les problèmes que la blockchain et les crypto-monnaies sont censés résoudre. 
+Être décentralisé signifie qu'il n'y a pas une seule personne, une seule entité ou un seul groupe ayant le contrôle ultime ou
+le bénéfice d'un système/
+
+Dans un système décentralisé, il n'y a pas un seul homme qui, par désir ou par persuasion, pourrait paralyser le système de manière significative.
+Cela signifie à la fois d'un point de vue technique (c'est-à-dire un développeur qui peut arrêter les échanges, ou désactiver le protocole par l'utilisation de contrats intelligents) 
+et d'un point de vue financier (par ex. une entité qui possède n+1 jetons (infini), et qui pourrait les vendre si elle le souhaitait, mais décide de ne pas le faire.)
+
+Cela ne veut pas dire qu'un système décentralisé adéquat ne possède pas de baleines ni ses propres fondements. 
+Il y a toujours ceux qui peuvent avoir un plus grand impact sur un réseau ou de 'l'importance' par l'entropie ou leur propre travail acharné. 
+
+CAW a été débuté à partir de rien, il n'y avait pas de développeur, pas d'information, pas de moyen de communication. Simplement. un contrat.
+
+Liberté fut donnée aux gens de découvrir la signification de CAW entre eux. Cela s'est bien passé, 
+et nous voudrions présenter notre cahier des charges pour la deuxième phase de CAW. Mais avant de le faire, 
+certaines choses doivent être dites et prises en compte : 
+
+     1. Ceci est seulement un cahier des charges. C'est à la cawmmunauté d'écrire et de déployer le protocole. 
+     2. Il est fortement recommandé de former un groupe de pairs afin de développer et réviser les contrats intelligents. 
+ comme il n'y a pas de leader dans ce processus, tous les partis tenteront de revendiquer la propriété du processus. 
+ il y aura toujours ceux qui prétendront pouvoir "tout faire" mais qui écriront le code parfait
+ avec la parfaite porte dérobée. Seul un contrat revu et accepté par la cawmmunauté sur un github public sera acceptable.
+     3. Après le déploiement, le déployeur doit renoncer à toute clé qu'il possède sur les contrats. Il n'y aura pas de multi-sig, ni de proxy mis à jour.
+Peu importe qui l'aura déployé, car ils seront égaux avec tous les autres sans aucun bénéfice ou avantage spécifique. Simplement, il faut bien rédiger le contrat.
+
+Nous proposons : 
+
+a. Un protocole composé de plusieurs contrats intelligents on-chain pour envoyer des messages publiquement ou p2p avec une limite maximale de 420 caractères. 
+b. Un cahier des charges pour les front-ends, dont un grand nombre sera créé, pour interagir avec ce protocole. 
+La fonction générale du protocole et de ses contrats est la suivante : 
+
+ i. Brûler CAW par le biais d'un contrat pour créer un NFT. Ce caw brûlé passera à 0x0. Le NFT sera votre nom d'utilisateur. 
+  a. Moins il y a de caractères dans votre nom d'utilisateur, plus le coût est élevé. 
+  b. Chaque nom d'utilisateur est unique, et peut utiliser a-z et 0-9, sans l'utilisation de caractères spéciaux (emojis, etc.) ou de majuscules. 
+
+ ii. Toute l'activité des l'utilisateurs, sociale et financière, passe par leur nom d'utilisateur NFT. Quiconque possède ce NFT a accès à ce compte. 
+ Cela inclut, sans s'y limiter, leur solde CAW et l'accès aux messages directs (DM) de cet utilisateur. 
+
+ iii. La propriété et la gestion des NFT se feront entièrement dans la chaîne. Par exemple, l'enregistrement du nom d'utilisateur 'cawdev'
+  sera stocké directement on-chain, ainsi que toutes les données associées. 
+
+ iv. La détention d'un NFT (notez détention/holding, pas staking) permet à l'utilisateur de déposer ou de retirer CAW dans un portefeuille de contrat. 
+ La propriété du NFT servira de clé pour ce portefeuille. Les utilisateurs qui utilisent plusieurs NFT peuvent préciser lesquels par un numéro unique associé. 
+
+ v. Un utilisateur peut dépenser CAW de la manière suivante sur le protocole. 
+
+  i. Créer un CAW (comme rédiger un tweet). 
+   a. Ce coût sera pris en CAW, puis distribué proportionnellement à tous les autres stakers. 
+  
+  ii. Aimer le CAW de quelqu'un d'autre. 
+   a. Ceci est plus proche du pourboire. Le CAW sera prélevé et envoyé directement dans le portefeuille de l'OP (original poster's). 
+  
+  iii. ReCAWing (semblable à un retweet). 
+   a. Le coût de cette opération sera pris en CAW et envoyé dans le portefeuille de l'OP. 
+
+  vi. Pour recevoir CAW, nous envisageons un contrat essentiellement sans frais de gaz, dans lequel les signatures peuvent pousser le solde CAW entre les utilisateurs et l'application dans un contrat.
+   La seule chose pour laquelle un utilisateur devrait dépenser du gaz serait : 
+   a. Création/Minting d'un NFT. 
+   b. Dépôt ou retrait de CAW. 
+
+  vii. Les DM devraient être 'libres' et exécutés via une poignée de main sans confiance entre deux comptes pour permettre une messagerie peer-to-peer sécurisée. 
+   Les chats de groupe apporteraient une complexité inutile et ne sont pas recommandés à ce stade.
+ 
+  viii. Toutes les données seront stockées de façon permanente. En raison des limites du réseau Ethereum, Arweave ou des blockchains similaires peuvent être préférés. La liquidité CAW
+  peut migrer à un moment donné vers le QOMQQL1, mais cela sera abordé une fois que les mérites techniques se révèleront et que le changement sera évident.
+
+  Le stockage des données doit être totalement non fiable et permanent. On ne saurait trop insister sur l'importance de la résistance à la censure et de l'autosurveillance pour l'amélioration
+  d'un protocole. CAW a pour seul but de vous donner un kit d'outils bruts nécessaires pour construire votre propre réseau en ligne.
+  Pour cette raison, il y a un écart distinct entre le protocole lui-même et les front-ends. 
+
+Au niveau de base, les contrats CAW pour le stockage et la communication de données sans confiance, tout peut être affiché. Nous ne sommes pas naïfs, et nous comprenons ce qui peut être affiché. 
+Par conséquent, il incombe aux front-ends de limiter le contenu qui pourrait obscurcir la raison de la création de CAW. 
+
+Ceci étant dit, au niveau d'un protocole, aucun nom d'utilisateur ou message ne sera bloqué ou mis en quarantaine. 
+En raison de la nature de la renonciation à la propriété des contrats intelligents, personne ne pourra limiter un tel contenu. 
+(peut-être comprenez-vous à présent pourquoi il est important de renoncer au contrat sans multi-sig ou mises à jour).
+
+Passons maintenant aux front-ends. Chacun est libre de créer ou d'héberger son propre front-end qui affichera ce qu'il veut (ou pas). 
+Nous nous attendons à ce qu'il y en ait beaucoup, avec l'objectif d'une application mobile et d'une extension de navigateur qui sert de cawing/portefeuille et de messagerie instantanée qui exécute
+les sigs rapides et invisibles pour donner une expérience de messagerie plus fluide (signer un metamask à chaque fois peut être fastidieux) 
+
+Nous recommandons à la communauté de créer un front-end alpha, qui soit plus ou moins "neutre". 
+Il peut filtrer la haine/violence manifeste, ainsi que les activités illégales dures, mais n'oubliez pas que nous devons d'abord conquérir le monde. 
+D'autres peuvent avoir une meilleure idée de ce qui devrait être montré, et leur prérogative devrait être de créer et d'héberger leur propre front-end. 
+Le fait est que CAW est comme Twitter. Sauf qu'il n'est lié à aucune loi et qu'il n'y a pas de modération centrale du contenu. 
+Cependant, les front-ends peuvent choisir de modérer le contenu comme ils le souhaitent, ou doivent le faire pour s'adapter aux directives légales qu'ils doivent respecter.
+
+
+Ainsi, même si un front-end vous bloque, vous ne pouvez pas être contrôlé et vous êtes toujours libre d'utiliser le protocole lui-même. 
+
+Annexe. 
+
+a. Il est assez évident que des individus vont commencer à acheter et vendre les noms d'utilisateur NFT. 
+Il serait sage pour un membre de la communauté de créer un marché sans confiance et sans frais pour de tels échanges, similaire aux échanges sans frais de Crypto Punk.
+Ceci étant dit, nous sommes bien conscients qu'à mesure que les CAW se développent, beaucoup utiliseront encore les places de marché FEE comme Opensea et Looks. 
+Cela signifie que le déployeur du contrat qui crée les NFTS aura la capacité technique de fixer lui-même les frais à partir d'Opensea. 
+
+Nous pensons que ce n'est pas une bonne chose, et nous demandons à la cawmmunauté de s'auto-contrôler/de renoncer afin de
+s'assurer que les frais de négociation ne sont pas fixés et envoyés à un portefeuille privé. 
+Si cela peut aider, cela impliquera une responsabilité pour le contenu publié si votre porte-monnaie reçoit des frais de transaction.
+
+b. D'un point de vue économique, ce sont les chiffres ouverts au débat et structurés de manière à ce que nous comprenions le montant pratique en dollars de CAW. 
+
+i. 50 mio de dollars de capitalisation boursière (CB proche ou actuelle). 
+ii. 1 mrd de dollars de capitalisation boursière (CB typique des memecoins qui s'envole/mooning pour un temps). 
+iii. 10 mrds de capitalisation boursière (similaire à SHIB). 
+
+Nous devrons être conscients des réalités de ce qui se passe lorsque la combustion des CAW augmente, 
+car nous ne serons pas en mesure de changer le coût du protocole une fois qu'il sera en marche. 
+
+Les calculs de coût nécessaires dans les CAW sont les suivants : 
+
+i. Montant des CAW à envoyer aux CAW (dont la totalité est répartie entre les stakers). 
+ii. Montant des CAW pour aimer un CAW. (envoyé à l'OP). 
+iii. Montant de CAW pour reCAW un CAW (distribué montant OP et stakers). 
+iv. Brûler des montants pour divers NFTs de nom d'utilisateur de différentes longueurs.
+
+Nous avons fait pas mal de calculs pour considérer les chiffres suivants, mais nous avons peut-être oublié quelque chose.
+Il a été calculé de telle sorte que liker, reCAWing, et poster, soit toujours abordable à un plafond de marché de 10 milliards, 
+tout en s'assurant que les noms d'utilisateurs plus rares et plus courts restent sacrément chers. 
+
+Voici le coût recommandé, ainsi que le montant estimé en dollars US entre parenthèses aux trois capitalisations cibles (50 mio, 1 mrd, 10 mrds). 
+
+- Nom d'utilisateur à caractère unique (rare !) - BURN 1 000 000 000 000 (89 985 $, 1 799 712 $, 17 997 120 $) 
+- Nom d'utilisateur à 2 caractères - BURN 240,000,000,000 CAW ($21,600, $432,000, $4,320,000) 
+- Nom d'utilisateur à 3 caractères - BURN 60,000,000,000 CAW ($5400, $108,000, $1,080,000) 
+- Nom d'utilisateur à 4 caractères - BURN 6,000,000,000 CAW ($540, $10,800 $108,000) 
+- Nom d'utilisateur à 5 caractères - BURN 200,000,000 CAW ($18, $360, $3600) 
+- Nom d'utilisateur à 6 caractères - BURN 20,000,000 CAW ($1.80, $36, $360) 
+- Nom d'utilisateur à 7 caractères - BURN 10,000,000 CAW (90c, $18, $180) 
+- Nom d'utilisateur à partir de 8 caractères et plus - BURN 1,000,000 CAW (9c, $1.80, $18) 
+
+- Suivre un compte (payé 80/20 au compte et au stakepool) 30000 (na,0.009,9c) 
+- Envoyer un CAW (max xxx caractères) (100 payé au stakepool) 5000 (na, na, 1.50c) 
+- Aimer un CAW (payé 80/20 au compte et au stakepool) 2000 (na,na, $0.007) 
+- ReCAW (payé 50/50 au compte et au stakepool) 4000 (na,na,1.20c) 
+
+c. Hébergement d'images et gestion. 
+
+i. Le protocole n'aura aucune implication dans l'hébergement des images. Ce sera aux front-ends de filtrer, afficher, héberger. 
+ii. Il est recommandé que les front-ends affichent les URLs de sources externes placées dans les posts, 
+ou d'utiliser leur propre raccourcisseur d'URL afin que les URL ne détruisent pas la limite de caractères du CAW. 
+
+Par exemple, si mon CAW était... "Je viens de manger du bon poisson frit sur Point Road avec @tk420 #yum #foodie #bestfrens https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg" 
+
+Un frontend devrait raccourcir l'URL en quelque chose comme 'https://c.aw/cawdev' avant que l'utilisateur ne publie son message, et restituer automatiquement l'URL sous forme d'extrait.
+
+Avec amour, celui qui rêve encore. 
+
+P.S. Il n'y a pas de réseaux sociaux officiels, ni de projets partenaires ou de communiqués ultérieurs.
+CAW est conçu sans conception, et c'est à la CAWMmunauté de façonner CAW. 
+Ce n'est qu'en vous donnant la vision et en voyant ce qui vient ensuite que nous pourrons avoir un système vraiment libre et décentralisé.

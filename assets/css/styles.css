@@ -1,0 +1,13 @@
+.gradient-text {
+    background: #F1C455;
+    background: -webkit-linear-gradient(to right, #F1C455 0%, #7D501F 23%, #A16207 68%, #444D63 95%);
+    background: -moz-linear-gradient(to right, #F1C455 0%, #7D501F 23%, #A16207 68%, #444D63 95%);
+    background: linear-gradient(to right, #F1C455 0%, #7D501F 23%, #A16207 68%, #444D63 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-break {
+    white-space: break-spaces;
+}

@@ -1,0 +1,17 @@
+*** (Henüz tamamlanmadı) *** 
+
+Desantralize bir Sosyal Takas Odasi uzerine bir Manifesto ... (bkz.) CAW
+
+Desantralize kavrami zaman icinde bazilarimiza kaybolmustur; 
+Bitcoin'in neden yaratildigini unutanlar, blockchain ve kripto paranin cozmesi gereken sorunlar.
+Desantralize olmak demek, tek bir kisi, bir birim veya bir grubun, uzerinde nihai kontrolu ya da avantaji olmayan bir sistem demek/
+
+
+Desantralize bir sistemde, arzulariyla veya ikna yoluyla, sistemi sakat birakabilecek tek bir adam yoktur.
+Hem teknik acidan (or. akilli sozlesmeler kullanarak ticareti durdurabilcen veya protokolu devre disi birakabilen bir yazilimci) hem de finansal acidan (or. n+1 (sinirsiz) tokeni olan ve diledigi zaman satabilecek olan fakat satmayan bir birim).
+
+
+Bu, desantralize bir sistemde balinalar ya da temel taslar yoktur anlamina gelmez.
+Bir ag uzerinde her zaman daha buyuk etkiye sahip olabilecek veya kendi siki calismalari ya da entropi yoluyla fark yaratabilecekler olacaktir.
+
+CAW bir hic olarak basladi. Bir yazilimci, herhangi bir bilgi veya iletisim olmadan. Basitce. bir kontrat.
