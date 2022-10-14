@@ -11,3 +11,10 @@
 .text-break {
     white-space: break-spaces;
 }
+
+.manifestoBorder {
+    border-color: lightgray;
+    border-style: dashed;
+    border-width: thin;
+    margin: 10px;
+}
