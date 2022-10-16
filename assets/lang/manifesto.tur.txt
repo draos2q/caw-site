@@ -1,17 +1,98 @@
-*** (Henüz tamamlanmadı) *** 
+Merkeziyetsiz Sosyal Takas Odası Üzerine Bir Manifesto… (Namıdiğer) CAW.
 
-Desantralize bir Sosyal Takas Odasi uzerine bir Manifesto ... (bkz.) CAW
+Merkeziyetsizlik konsepti, Bitcoin’in neden yaratıldığını, blok zincir ve kripto para biriminin çözmesi gereken sorunları unutan bazılarımız için zamanla kaybolmuştur. 
 
-Desantralize kavrami zaman icinde bazilarimiza kaybolmustur; 
-Bitcoin'in neden yaratildigini unutanlar, blockchain ve kripto paranin cozmesi gereken sorunlar.
-Desantralize olmak demek, tek bir kisi, bir birim veya bir grubun, uzerinde nihai kontrolu ya da avantaji olmayan bir sistem demek/
+Merkeziyetsiz olmak demek nihai güce sahip ya da sistemden çıkar sağlayan bir kişi, kurum yahut bir grubun olmaması demektir. Merkeziyetsiz bir sistemde, tek bir kişi arzu ettiği için ya da manidar bir ikna yoluyla sistemi felç edemez. Bu hem teknik (yani, akıllı kontratlar kullanarak ticareti durdurabilen yahut protokolü devre dışı bırakabilen bir geliştirici) hem de finansal (örneğin, n+1 (sonsuz) tokeni olup canı istediğinde satarak baskılayabilecek olan fakat istemediği için yapmayan biri) anlamda böyledir. Bu, düzgün bir merkeziyetsiz sistem balinalar ya da köşe taşları olmadan olur demek değildir.
+Her zaman, ya sıkı çalışarak ya da entropideki ‘madde’ misali ağın üzerinde daha büyük yetkinliğe sahip birileri olacaktır. 
+
+CAW bir hiç olarak başladı. Geliştirici yoktu, bilgi yoktu, iletişim ortamı yoktu. Basitçe. Bir kontrat. İnsanlara kendi aralarında CAW’ın anlamını keşfetme özgürlüğü verildi. Süreç iyi ilerledi ve bu yüzden CAW’ın ikinci fazı için beyannamemizi sunmak istiyoruz. Ama sunmadan önce bazı şeyler söylenmek ve not edilmek zorunda:
+
+1. Bu sadece bir beyannamedir. Yazmak ve protokolü yüklemek cawmünitenin tercihine kalmıştır.
+
+2. Akıllı kontratları yazıp gözden geçirmek için akran bir grup oluşturulması şiddetle önerilir. Bu süreçte lider olmayacağı için bütün tipler sürecin sahipliğini talep etmeye çalışacaktır. ‘Hepsini yapmaya’ gücüm yeter diyenlerden ziyade harika bir backdoor ile mükemmel kodlar yazacak kişilerin çok büyük yardımı olacaktır.  Yalnızca halka açık GitHub üzerinde cawmünite tarafından gözden geçirilip kontrol edilen bir kontrat kabul edilecektir. 
+
+3. Dağıtımdan sonra dağıtımcının sözleşmeye ilişkin tüm anahtarlardan vazgeçmesi gerekir. Çoklu imza, yükseltilebilir proxy olmayacak. Kimin dağıttığı önemli olmayacak çünkü belirli bir fayda ya da avantaj sağlaması önemli değil, herkes eşit olacak. Yeter ki kontrat doğru yazılsın.  
+
+Tekliflerimiz:
+
+a. Halka açık mesajları maksimum 420 karakter sınırıyla p2p göndermek için birçok zincir üstü akıllı kontrattan oluşan bir protokol.   b. Bu protokolle etkileşim içinde olacak olan bir çoğunun yapılacağı arayüz için bir beyanname. Protokol ve kontratlarının genel fonksiyonları aşağıdaki gibidir:
+
+1. NFT basmak için kontrat aracılığıyla CAW yakın. Bu yanan CAW’lar 0x0. Adresine gidecek. NFT sizin kullanıcı adınız olacak.  
+a. Kullanıcı adınızdaki karakter sayısı azaldıkça maliyet artacak. 
+b. Her kullanıcı adı eşsiz olacak, ve büyük harfler ve özel karakterler olmaksızın a’dan z’ye 0’dan 9’a karakterler kullanabilecekler.
+
+2. Sosyal ve finansal tüm kullanıcı aktiviteler NFT kullanıcı adları üzerinden gerçekleşecek. O NFT’ye kim sahip olursa o hesaba da sahip olmuş olacak. Bu kullanıcının CAW bakiyesini ve direkt mesajlarını (DM’lerini) içerir fakat bunlarla sınırlı değildir.  
+
+3. NFT’nin sahipliği ve yönetimi tamamen zincir üstü olacak. Örneğin ‘cawdev’ adlı kullanıcı adının kaydı ilişkili tüm verilerle birlikte zincir üzerinde depolanacaktır.  
+
+4. NFT’yi tutmak (tutmak, stakelemek değil), bir kontrat cüzdanına CAW yatırıp çekme izni verir. NFT’nin sahipliği cüzdan anahtarı vazifesi görecektir. Birden fazla NFT kullanan kullanıcılar, hangisinin benzersiz bir numara ile ilişkilendirileceğini belirtebilirler.  
+
+5. Bir kullanıcı protokol üzerinde aşağıdaki yöntemlerden biriyle CAW harcayabilir. 
+a. CAW yapmak (Tweet atmaya benzer). - Bunun maliyeti CAW’dan alınacak, ve daha sonra orantılı olarak diğer tüm stakerlara dağıtılacak. 
+b. Bir başkasının CAW’ını beğenmek.  - Bu bahşişe daha yakın. CAW alınıp direkt olarak İÜ’nin (içerik üreticisi) cüzdanına gönderilecek.   
+c. ReCAW’lamak (retweet etmeye benzer).  - Maliyet CAW olarak alınacak ve İÜ’nin cüzdanına gönderilir. 
+
+6. Bir kontratta imzaların kullanıcılar ve uygulama arasındaki CAW dengesini zorlayabileceği durumlarda CAW’ı almak için çoğunlukla işlem ücretsiz bir kontrat öngörüyoruz.  Bir kullanıcının işlem ücretini sadece şu şeyler için ödeyecektir:
+a. Bir NFT basmak. 
+b. CAW yatırıp çekmek. 
+
+7. DM’ler ücretsiz olmalı ve eşler arası mesajlaşmayı sağlamak için iki hesap arasında güvenilir bir anlaşma yoluyla yürütülmelidir.  Grup sohbet gereksiz bir karışıklık getirir. Bu yüzden şu durumda önerilmez. 
+
+8. Bütün veriler kalıcı olarak saklanacak. Ethereum ağındaki sınırlamalardan dolayı Arweave ya da benzer blok zincirler önerilir.  CAW’ın likiditesi bir noktada QOMQQL1’e geçebilir fakat bu teknik beceriler kendini gösterdiğinde ve hareket açık olduğunda ele alınacaktır. 
+
+Veri depolama tamamen güvenilir ve kalıcı olmalıdır. Bir protokolün iyileştirilmesi için hem sansüre dirençli olmanın hem de kendi kendini denetlemenin önemi göz ardı edilemez. CAW, yalnızca kendi çevrimiçi toplumunuzu inşa etmeniz için size ana teçhizatların olduğu takım çantasını verir.  Bu yüzden protokolün kendisiyle arayüz arasında belirgin bir boşluk vardır. 
+
+Temel düzeyde, CAW’ın kontratları güvenilir veri depolanması ve iletişim içindir, herhangi bir şey post olarak atılabilir. Toy değiliz, nelerin post olarak atılabileceğini anlıyoruz. Bunun bir sonucu olarak CAW’ın ortaya çıkış nedenini karartabilecek içeriklere limit koyma işi arayüze bağlı olacak.   Bununla birlikte, bir protokol düzeyinde hiçbir kullanıcı adı veya mesaj engellenmeyecek veya karantinaya alınmayacaktır. Akıllı kontratların mülkiyetinden feragat edilmesinin doğası gereği, bu tür içeriği sınırlayabilecek kimse olmayacaktır (belki şimdi, çoklu imza veya yükseltme olmadan sözleşmeden vazgeçmenin neden önemli olduğunu anlıyorsunuzdur.).
+
+Şimdi sıra arayüzde. Herkes kendi hoşuna giden (ya da gitmeyen) arayüzleri barındırmakta ya da yapmakta özgürdür.  İmzaları daha hızlı ve görünmez kılacak akıcı mesajlaşma deneyimi sunan anında mesajlama platformu olarak hizmet veren CAW’lamak/cüzdan için bir mobil uygulama ve tarayıcı uzantısı hedefiyle birlikte pek çok şeyin olmasını bekliyoruz (Her seferinde metamask imzalamak yorucu olabilir).  Topluluğun aşağı yukarı 'tarafsız' bir alfa arayüz oluşturmasını tavsiye ederiz. Arayüz sert yasadışı faaliyetlerle birlikte açık nefret/şiddeti filtreleyebilir. Önce dünyayı kazanmamız gerektiğini unutmayın. Diğerleri neyin gösterilmesi gerektiği konusunda daha iyi bir fikre sahip olabilir ve yetkileri kendi arayüzlerini oluşturmak ve barındırmak olmalıdır.  
+
+Esasında CAW Twitter gibidir. Herhangi bir yasaya ve merkezi içerik düzenleyicisine bağlı olmamasıyla ondan ayrılır. Bununla birlikte, arayüzler içeriği istedikleri gibi yönetmeyi seçebilir veya uymaları gereken yasal yönergelere uymaları gerekebilir.  Bir arayüz sizi engellese bile polislik olmazsınız ve protokolün kendisini kullanmakta hala özgürsünüzdür.   
+
+Ek.  
+
+a. Bireylerin NFT kullanıcı adı alıp satmaya başlayacakları oldukça açık.  Bir topluluk üyesinin bu tür işlemler için, Crypto Punk’ın işlem ücretsiz işlemlerine benzer şekilde, güvenilir ve işlem ücretsiz bir pazar yeri oluşturması akıllıca olacaktır.  Bununla birlikte, CAW’ın ölçeği büyüdükçe birçoğunun Opensea ve Looks gibi ücretli pazarları kullanmaya devam edeceğinin oldukça farkındayız.  Bu, NFTS’yi basan kontratın uygulayıcılarının Opensea’dan kendilerine ücret belirleme konusunda teknik yeteceğe sahip olacağı anlamına gelir.   Bunun iyi bir şey olduğunu düşünmüyoruz ve ticaret ücretlerinin belirlenmediğinden ve özel bir cüzdana gönderilmediğinden emin olmak için topluluktan kendi kendini denetlemesini/vazgeçmesini istiyoruz. Eğer yardımcı olursa, cüzdanınız işlem ücreti alıyorsa bu, yayınlanan içerik için sorumluluk anlamına gelir.
+ 
+b. Ekonomik olarak, bunlar tartışmaya açık sayılardır ve CAW'ın pratik dolar miktarını anlamamız için yapılandırılmıştır.
+1. $50 Milyon piyasa değeri (şu anki ya da yakın piyasa değeri)
+2. $1 Milyar piyasa değeri (tipik bir fiyatı biraz canlanan memecoinin piyasa değeri)
+3. $10 Milyar piyasa değeri (SHIB-gibi)
+
+Protokolü bir kere harekete geçirdikten sonra bir daha maliyeti değiştiremeyeceğimiz için CAW yakımının ölçeklenmesinin ne olacağı gerçeğinin farkında olmamız gerekecek.  CAW’ın gereken maliyet hesaplaması şöyledir:
+1. Bir CAW göndermenin CAW miktarı (stakerlere dağıtılanların tümü)
+2. Bir CAW’ı beğenmenin CAW miktarı (İÜ’ne dağıtılanlar) 
+3. Bir CAW’ı reCAW etmenin CAW miktarı (stakerlere ve İÜ’ne dağıtılan miktar)
+4. Çeşitli uzunluktaki kullanıcı adı NFT'leri için yakma miktarları.
+
+Aşağıdaki sayıları hesap etmek için epeyce matematik yaptık, ancak birkaç şeyi gözden kaçırmış olabiliriz. Beğenme, reCAW’lama ve CAW’lama, daha nadir ve daha kısa kullanıcı adlarının çok pahalı kalmasını sağlarken her zaman $10 milyarlık bir piyasa değeriyle karşılanabilir olacak şekilde hesaplandı.
+
+Aşağıdakiler, üç hedef piyasa değerinde parantez içinde ABD Doları cinsinden tahmini tutarla birlikte önerilen maliyettir ($50 Milyon, $1 Milyar, $10 Milyar). 
+
+1 harfli kullanıcı adı (nadirdir) için 1.000.000.000.000 CAW yakılacak ($89.985, $1.799.712, $17.997.120). 
+2 harfli kullanıcı adı için 240.000.000.000 CAW yakılacak ($21,600, $432,000, $4,320,000).
+3 harfli kullanıcı adı için 60,000,000,000 CAW yakılacak ($5400, $108,000, $1,080,000).
+4 harfli kullanıcı adı için 6,000,000,000 CAW yakılacak ($540, $10,800 $108,000).  
+5 harfli kullanıcı adı için 200,000,000 CAW yakılacak ($18, $360, $3600).
+6 harfli kullanıcı adı için 20,000,000 CAW yakılacak ($1.80, $36, $360).
+7 harfli kullanıcı adı için 10,000,000 CAW yakılacak (90c, $18, $180). 
+8 harf ve üzeri kullanıcı adı için 1,000,000 CAW yakılacak (9c, $1.80, $18).
+
+- Bir hesabı takip etmek (%80’i hesaba, %20’si stake havuzuna) 30.000 CAW (0, $0.009, 9 cent).
+- Bir CAW göndermek (hepsi stake havuzuna) 5.000 CAW (0, 0, 1.5 cent).  
+- Bir CAW beğenmek (%80’i hesaba, %20’si stake havuzuna) 2.000 CAW (0, 0, $0.007).
+- ReCAW yapmak (%50 hesaba, %50 stake havuzuna) 4.000 CAW (0, 0, 1.2 cent)
+
+c. Görüntü barındırma ve yönetme. 
+1. Protokolün görüntülerin barındırılmasıyla hiçbir ilgisi olmayacaktır. Bu, filtrelemek, görüntülemek, barındırmak arayüze bağlı olacaktır.
+
+2. Arayüzlerin, gönderilerin içine yerleştirilmiş harici kaynaklardan URL'ler oluşturması veya URL'lerin CAW'daki karakter sınırını bozmaması için kendi URL kısaltıcılarının kullanılması önerilir. 
+
+3. Örneğin şöyle bir CAW’ım olsaydı… “ @tk420 ile Point Road'da harika kızarmış balıklar yedim #ham #yemek #dost https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg” Bir arayüz, kullanıcılar göndermeden önce URL'yi 'https://c.aw/cawdev' gibi bir şekilde kısaltmalı ve URL'yi otomatik olarak bir snippet olarak oluşturmalıdır.
 
 
-Desantralize bir sistemde, arzulariyla veya ikna yoluyla, sistemi sakat birakabilecek tek bir adam yoktur.
-Hem teknik acidan (or. akilli sozlesmeler kullanarak ticareti durdurabilcen veya protokolu devre disi birakabilen bir yazilimci) hem de finansal acidan (or. n+1 (sinirsiz) tokeni olan ve diledigi zaman satabilecek olan fakat satmayan bir birim).
+Sevgiyle, hâlâ hayal kuran biri. 
 
+Not: Resmi sosyal hesaplar, ortaklar, projeler yahut yayınlar yoktur! 
 
-Bu, desantralize bir sistemde balinalar ya da temel taslar yoktur anlamina gelmez.
-Bir ag uzerinde her zaman daha buyuk etkiye sahip olabilecek veya kendi siki calismalari ya da entropi yoluyla fark yaratabilecekler olacaktir.
+CAW tasarımı gereği tasarımsızdır ve CAW’ı şekillendirmek CAWmüniteye bağlıdır. 
 
-CAW bir hic olarak basladi. Bir yazilimci, herhangi bir bilgi veya iletisim olmadan. Basitce. bir kontrat.
+Yalnızca size vizyon verip sonrasında neler olacağını gözlemleyerek gerçekten özgür ve merkeziyetsiz bir sisteme sahip olabiliriz.
