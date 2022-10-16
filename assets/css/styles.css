@@ -18,3 +18,9 @@
     border-width: thin;
     margin: 10px;
 }
+.icon-link-original-manifesto:after {
+    content: url('/assets/images/link-icon.svg');
+    vertical-align: -0.125em;
+    width: 1em;
+    height: 1em;
+}

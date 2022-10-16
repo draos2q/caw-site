@@ -2,6 +2,18 @@
 const dropdownLang = document.getElementById('dropdown-lang');
 const lang = localStorage.getItem('lang') || 'en';
 
+//* Map element id to dictionary key on i18n file
+const mappedElements = [
+    { elId: 'caw-title-manifesto', key: 'title' },
+    { elId: 'caw-desc-manifesto', key: 'description' },
+    { elId: 'caw-subtitle-manifesto', key: 'manifesto-subtitle' },
+    { elId: 'tooltip-theme-mode', key: 'tooltip-theme-mode' },
+    { elId: 'tooltip-army', key: 'tooltip-army' },
+    { elId: 'join-army-link', key: 'join-army-link' },
+    { elId: 'join-army-footer-link', key: 'join-army-footer-link' },
+    { elId: 'link-original-manifesto', key: 'link-original-manifesto' },
+]
+
 loadTranlation(lang);
 
 async function loadTranlation(lang, desc) {
@@ -36,37 +48,20 @@ async function loadLabels(lang) {
         const resp = await fetch(`./assets/lang/i18n.${lang}.json`);
         const i18n = await resp.json();
 
-        const elTitle = document.getElementById('caw-title-manifesto');
-        if (elTitle)
-            elTitle.innerText = i18n[ 'title' ] || elTitle.innerText || '';
-
-        const elDesc = document.getElementById('caw-desc-manifesto');
-        if (elDesc)
-            elDesc.innerText = i18n[ 'description' ] || elDesc.innerText || '';
-
-        const elSubTitle = document.getElementById('caw-subtitle-manifesto');
-        if (elSubTitle)
-            elSubTitle.innerText = i18n[ 'manifesto_subtitle' ] || elSubTitle.innerText || '';
-
-        const tooltipModeEl = document.getElementById('tooltip-theme-mode');
-        if (tooltipModeEl)
-            tooltipModeEl.innerText = i18n[ 'tooltip-theme-mode' ] || tooltipModeEl.innerText || '';
-
-        const tooltipArmyEl = document.getElementById('tooltip-army');
-        if (tooltipArmyEl)
-            tooltipArmyEl.innerText = i18n[ 'tooltip-army' ] || tooltipArmyEl.innerText || '';
-
-        const joinArmyLink = document.getElementById('join-army-link');
-        if (joinArmyLink)
-            joinArmyLink.innerText = i18n[ 'join-army-link' ] || joinArmyLink.innerText || '';
-
-        const joinArmyFooterLink = document.getElementById('join-army-footer-link');
-        if (joinArmyFooterLink)
-            joinArmyFooterLink.innerText = i18n[ 'join-army-footer-link' ] || joinArmyFooterLink.innerText || '';
+        mappedElements.forEach(x => setText(i18n, x.elId, x.key));
     }
     catch (error) {
         console.error(error);
     }
+}
+
+function setText(i18n, elId, dicKey) {
+    if (!dicKey || !elId)
+        return;
+
+    const el = document.getElementById(elId);
+    if (el)
+        el.innerText = i18n[ dicKey ] || el.innerText || '';
 }
 
 function setLang(lang) {
@@ -74,6 +69,6 @@ function setLang(lang) {
     loadTranlation(lang);
 }
 
-dropdownLang.addEventListener('click', function (e) {
+dropdownLang?.addEventListener('click', function (e) {
     setLang(e?.target?.hreflang || 'en', e?.target?.innerText);
 });
