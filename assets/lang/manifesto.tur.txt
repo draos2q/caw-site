@@ -9,55 +9,55 @@ CAW bir hiç olarak başladı. Geliştirici yoktu, bilgi yoktu, iletişim ortam�
 
 1. Bu sadece bir beyannamedir. Yazmak ve protokolü yüklemek cawmünitenin tercihine kalmıştır.
 
-2. Akıllı kontratları yazıp gözden geçirmek için akran bir grup oluşturulması şiddetle önerilir. Bu süreçte lider olmayacağı için bütün tipler sürecin sahipliğini talep etmeye çalışacaktır. ‘Hepsini yapmaya’ gücüm yeter diyenlerden ziyade harika bir backdoor ile mükemmel kodlar yazacak kişilerin çok büyük yardımı olacaktır.  Yalnızca halka açık GitHub üzerinde cawmünite tarafından gözden geçirilip kontrol edilen bir kontrat kabul edilecektir. 
+2. Akıllı kontratları yazıp gözden geçirmek için akran bir grup oluşturulması şiddetle önerilir.Bu süreçte lider olmayacağı için bütün tipler sürecin sahipliğini talep etmeye çalışacaktır.‘Hepsini yapmaya’ gücüm yeter diyenlerden ziyade harika bir backdoor ile mükemmel kodlar yazacak kişilerin çok büyük yardımı olacaktır. Yalnızca halka açık GitHub üzerinde cawmünite tarafından gözden geçirilip kontrol edilen bir kontrat kabul edilecektir. 
 
-3. Dağıtımdan sonra dağıtımcının sözleşmeye ilişkin tüm anahtarlardan vazgeçmesi gerekir. Çoklu imza, yükseltilebilir proxy olmayacak. Kimin dağıttığı önemli olmayacak çünkü belirli bir fayda ya da avantaj sağlaması önemli değil, herkes eşit olacak. Yeter ki kontrat doğru yazılsın.  
+3. Dağıtımdan sonra dağıtımcının sözleşmeye ilişkin tüm anahtarlardan vazgeçmesi gerekir. Çoklu imza, yükseltilebilir proxy olmayacak.Kimin dağıttığı önemli olmayacak çünkü belirli bir fayda ya da avantaj sağlaması önemli değil, herkes eşit olacak. Yeter ki kontrat doğru yazılsın.
 
 Tekliflerimiz:
 
-a. Halka açık mesajları maksimum 420 karakter sınırıyla p2p göndermek için birçok zincir üstü akıllı kontrattan oluşan bir protokol.   b. Bu protokolle etkileşim içinde olacak olan bir çoğunun yapılacağı arayüz için bir beyanname. Protokol ve kontratlarının genel fonksiyonları aşağıdaki gibidir:
+a. Halka açık mesajları maksimum 420 karakter sınırıyla p2p göndermek için birçok zincir üstü akıllı kontrattan oluşan bir protokol. b. Bu protokolle etkileşim içinde olacak olan bir çoğunun yapılacağı arayüz için bir beyanname.Protokol ve kontratlarının genel fonksiyonları aşağıdaki gibidir:
 
 1. NFT basmak için kontrat aracılığıyla CAW yakın. Bu yanan CAW’lar 0x0. Adresine gidecek. NFT sizin kullanıcı adınız olacak.  
 a. Kullanıcı adınızdaki karakter sayısı azaldıkça maliyet artacak. 
 b. Her kullanıcı adı eşsiz olacak, ve büyük harfler ve özel karakterler olmaksızın a’dan z’ye 0’dan 9’a karakterler kullanabilecekler.
 
-2. Sosyal ve finansal tüm kullanıcı aktiviteler NFT kullanıcı adları üzerinden gerçekleşecek. O NFT’ye kim sahip olursa o hesaba da sahip olmuş olacak. Bu kullanıcının CAW bakiyesini ve direkt mesajlarını (DM’lerini) içerir fakat bunlarla sınırlı değildir.  
+2. Sosyal ve finansal tüm kullanıcı aktiviteler NFT kullanıcı adları üzerinden gerçekleşecek. O NFT’ye kim sahip olursa o hesaba da sahip olmuş olacak.Bu kullanıcının CAW bakiyesini ve direkt mesajlarını (DM’lerini) içerir fakat bunlarla sınırlı değildir. 
 
-3. NFT’nin sahipliği ve yönetimi tamamen zincir üstü olacak. Örneğin ‘cawdev’ adlı kullanıcı adının kaydı ilişkili tüm verilerle birlikte zincir üzerinde depolanacaktır.  
+3. NFT’nin sahipliği ve yönetimi tamamen zincir üstü olacak. Örneğin ‘cawdev’ adlı kullanıcı adının kaydı ilişkili tüm verilerle birlikte zincir üzerinde depolanacaktır. 
 
-4. NFT’yi tutmak (tutmak, stakelemek değil), bir kontrat cüzdanına CAW yatırıp çekme izni verir. NFT’nin sahipliği cüzdan anahtarı vazifesi görecektir. Birden fazla NFT kullanan kullanıcılar, hangisinin benzersiz bir numara ile ilişkilendirileceğini belirtebilirler.  
+4. NFT’yi tutmak (tutmak, stakelemek değil), bir kontrat cüzdanına CAW yatırıp çekme izni verir. NFT’nin sahipliği cüzdan anahtarı vazifesi görecektir. Birden fazla NFT kullanan kullanıcılar, hangisinin benzersiz bir numara ile ilişkilendirileceğini belirtebilirler. 
 
-5. Bir kullanıcı protokol üzerinde aşağıdaki yöntemlerden biriyle CAW harcayabilir. 
-a. CAW yapmak (Tweet atmaya benzer). - Bunun maliyeti CAW’dan alınacak, ve daha sonra orantılı olarak diğer tüm stakerlara dağıtılacak. 
-b. Bir başkasının CAW’ını beğenmek.  - Bu bahşişe daha yakın. CAW alınıp direkt olarak İÜ’nin (içerik üreticisi) cüzdanına gönderilecek.   
-c. ReCAW’lamak (retweet etmeye benzer).  - Maliyet CAW olarak alınacak ve İÜ’nin cüzdanına gönderilir. 
+5. Bir kullanıcı protokol üzerinde aşağıdaki yöntemlerden biriyle CAW harcayabilir.
+a. CAW yapmak (Tweet atmaya benzer).- Bunun maliyeti CAW’dan alınacak, ve daha sonra orantılı olarak diğer tüm stakerlara dağıtılacak. 
+b. Bir başkasının CAW’ını beğenmek. - Bu bahşişe daha yakın. CAW alınıp direkt olarak İÜ’nin (içerik üreticisi) cüzdanına gönderilecek. 
+c. ReCAW’lamak (retweet etmeye benzer). - Maliyet CAW olarak alınacak ve İÜ’nin cüzdanına gönderilir. 
 
-6. Bir kontratta imzaların kullanıcılar ve uygulama arasındaki CAW dengesini zorlayabileceği durumlarda CAW’ı almak için çoğunlukla işlem ücretsiz bir kontrat öngörüyoruz.  Bir kullanıcının işlem ücretini sadece şu şeyler için ödeyecektir:
-a. Bir NFT basmak. 
-b. CAW yatırıp çekmek. 
+6. Bir kontratta imzaların kullanıcılar ve uygulama arasındaki CAW dengesini zorlayabileceği durumlarda CAW’ı almak için çoğunlukla işlem ücretsiz bir kontrat öngörüyoruz. Bir kullanıcının işlem ücretini sadece şu şeyler için ödeyecektir:
+a. Bir NFT basmak.
+b. CAW yatırıp çekmek.
 
-7. DM’ler ücretsiz olmalı ve eşler arası mesajlaşmayı sağlamak için iki hesap arasında güvenilir bir anlaşma yoluyla yürütülmelidir.  Grup sohbet gereksiz bir karışıklık getirir. Bu yüzden şu durumda önerilmez. 
+7. DM’ler ücretsiz olmalı ve eşler arası mesajlaşmayı sağlamak için iki hesap arasında güvenilir bir anlaşma yoluyla yürütülmelidir.Grup sohbet gereksiz bir karışıklık getirir. Bu yüzden şu durumda önerilmez.
 
-8. Bütün veriler kalıcı olarak saklanacak. Ethereum ağındaki sınırlamalardan dolayı Arweave ya da benzer blok zincirler önerilir.  CAW’ın likiditesi bir noktada QOMQQL1’e geçebilir fakat bu teknik beceriler kendini gösterdiğinde ve hareket açık olduğunda ele alınacaktır. 
+8. Bütün veriler kalıcı olarak saklanacak. Ethereum ağındaki sınırlamalardan dolayı Arweave ya da benzer blok zincirler önerilir. CAW’ın likiditesi bir noktada QOMQQL1’e geçebilir fakat bu teknik beceriler kendini gösterdiğinde ve hareket açık olduğunda ele alınacaktır. 
 
-Veri depolama tamamen güvenilir ve kalıcı olmalıdır. Bir protokolün iyileştirilmesi için hem sansüre dirençli olmanın hem de kendi kendini denetlemenin önemi göz ardı edilemez. CAW, yalnızca kendi çevrimiçi toplumunuzu inşa etmeniz için size ana teçhizatların olduğu takım çantasını verir.  Bu yüzden protokolün kendisiyle arayüz arasında belirgin bir boşluk vardır. 
+Veri depolama tamamen güvenilir ve kalıcı olmalıdır. Bir protokolün iyileştirilmesi için hem sansüre dirençli olmanın hem de kendi kendini denetlemenin önemi göz ardı edilemez.CAW, yalnızca kendi çevrimiçi toplumunuzu inşa etmeniz için size ana teçhizatların olduğu takım çantasını verir. Bu yüzden protokolün kendisiyle arayüz arasında belirgin bir boşluk vardır. 
 
-Temel düzeyde, CAW’ın kontratları güvenilir veri depolanması ve iletişim içindir, herhangi bir şey post olarak atılabilir. Toy değiliz, nelerin post olarak atılabileceğini anlıyoruz. Bunun bir sonucu olarak CAW’ın ortaya çıkış nedenini karartabilecek içeriklere limit koyma işi arayüze bağlı olacak.   Bununla birlikte, bir protokol düzeyinde hiçbir kullanıcı adı veya mesaj engellenmeyecek veya karantinaya alınmayacaktır. Akıllı kontratların mülkiyetinden feragat edilmesinin doğası gereği, bu tür içeriği sınırlayabilecek kimse olmayacaktır (belki şimdi, çoklu imza veya yükseltme olmadan sözleşmeden vazgeçmenin neden önemli olduğunu anlıyorsunuzdur.).
+Temel düzeyde, CAW’ın kontratları güvenilir veri depolanması ve iletişim içindir, herhangi bir şey post olarak atılabilir. Toy değiliz, nelerin post olarak atılabileceğini anlıyoruz. Bunun bir sonucu olarak CAW’ın ortaya çıkış nedenini karartabilecek içeriklere limit koyma işi arayüze bağlı olacak. Bununla birlikte, bir protokol düzeyinde hiçbir kullanıcı adı veya mesaj engellenmeyecek veya karantinaya alınmayacaktır. Akıllı kontratların mülkiyetinden feragat edilmesinin doğası gereği, bu tür içeriği sınırlayabilecek kimse olmayacaktır (belki şimdi, çoklu imza veya yükseltme olmadan sözleşmeden vazgeçmenin neden önemli olduğunu anlıyorsunuzdur.).
 
-Şimdi sıra arayüzde. Herkes kendi hoşuna giden (ya da gitmeyen) arayüzleri barındırmakta ya da yapmakta özgürdür.  İmzaları daha hızlı ve görünmez kılacak akıcı mesajlaşma deneyimi sunan anında mesajlama platformu olarak hizmet veren CAW’lamak/cüzdan için bir mobil uygulama ve tarayıcı uzantısı hedefiyle birlikte pek çok şeyin olmasını bekliyoruz (Her seferinde metamask imzalamak yorucu olabilir).  Topluluğun aşağı yukarı 'tarafsız' bir alfa arayüz oluşturmasını tavsiye ederiz. Arayüz sert yasadışı faaliyetlerle birlikte açık nefret/şiddeti filtreleyebilir. Önce dünyayı kazanmamız gerektiğini unutmayın. Diğerleri neyin gösterilmesi gerektiği konusunda daha iyi bir fikre sahip olabilir ve yetkileri kendi arayüzlerini oluşturmak ve barındırmak olmalıdır.  
+Şimdi sıra arayüzde. Herkes kendi hoşuna giden (ya da gitmeyen) arayüzleri barındırmakta ya da yapmakta özgürdür. İmzaları daha hızlı ve görünmez kılacak akıcı mesajlaşma deneyimi sunan anında mesajlama platformu olarak hizmet veren CAW’lamak/cüzdan için bir mobil uygulama ve tarayıcı uzantısı hedefiyle birlikte pek çok şeyin olmasını bekliyoruz (Her seferinde metamask imzalamak yorucu olabilir).Topluluğun aşağı yukarı 'tarafsız' bir alfa arayüz oluşturmasını tavsiye ederiz. Arayüz sert yasadışı faaliyetlerle birlikte açık nefret/şiddeti filtreleyebilir. Önce dünyayı kazanmamız gerektiğini unutmayın. Diğerleri neyin gösterilmesi gerektiği konusunda daha iyi bir fikre sahip olabilir ve yetkileri kendi arayüzlerini oluşturmak ve barındırmak olmalıdır.
 
-Esasında CAW Twitter gibidir. Herhangi bir yasaya ve merkezi içerik düzenleyicisine bağlı olmamasıyla ondan ayrılır. Bununla birlikte, arayüzler içeriği istedikleri gibi yönetmeyi seçebilir veya uymaları gereken yasal yönergelere uymaları gerekebilir.  Bir arayüz sizi engellese bile polislik olmazsınız ve protokolün kendisini kullanmakta hala özgürsünüzdür.   
+Esasında CAW Twitter gibidir. Herhangi bir yasaya ve merkezi içerik düzenleyicisine bağlı olmamasıyla ondan ayrılır.Bununla birlikte, arayüzler içeriği istedikleri gibi yönetmeyi seçebilir veya uymaları gereken yasal yönergelere uymaları gerekebilir.Bir arayüz sizi engellese bile polislik olmazsınız ve protokolün kendisini kullanmakta hala özgürsünüzdür. 
 
-Ek.  
+Ek.
 
-a. Bireylerin NFT kullanıcı adı alıp satmaya başlayacakları oldukça açık.  Bir topluluk üyesinin bu tür işlemler için, Crypto Punk’ın işlem ücretsiz işlemlerine benzer şekilde, güvenilir ve işlem ücretsiz bir pazar yeri oluşturması akıllıca olacaktır.  Bununla birlikte, CAW’ın ölçeği büyüdükçe birçoğunun Opensea ve Looks gibi ücretli pazarları kullanmaya devam edeceğinin oldukça farkındayız.  Bu, NFTS’yi basan kontratın uygulayıcılarının Opensea’dan kendilerine ücret belirleme konusunda teknik yeteceğe sahip olacağı anlamına gelir.   Bunun iyi bir şey olduğunu düşünmüyoruz ve ticaret ücretlerinin belirlenmediğinden ve özel bir cüzdana gönderilmediğinden emin olmak için topluluktan kendi kendini denetlemesini/vazgeçmesini istiyoruz. Eğer yardımcı olursa, cüzdanınız işlem ücreti alıyorsa bu, yayınlanan içerik için sorumluluk anlamına gelir.
- 
+a. Bireylerin NFT kullanıcı adı alıp satmaya başlayacakları oldukça açık. Bir topluluk üyesinin bu tür işlemler için, Crypto Punk’ın işlem ücretsiz işlemlerine benzer şekilde, güvenilir ve işlem ücretsiz bir pazar yeri oluşturması akıllıca olacaktır. Bununla birlikte, CAW’ın ölçeği büyüdükçe birçoğunun Opensea ve Looks gibi ücretli pazarları kullanmaya devam edeceğinin oldukça farkındayız. Bu, NFTS’yi basan kontratın uygulayıcılarının Opensea’dan kendilerine ücret belirleme konusunda teknik yeteceğe sahip olacağı anlamına gelir. Bunun iyi bir şey olduğunu düşünmüyoruz ve ticaret ücretlerinin belirlenmediğinden ve özel bir cüzdana gönderilmediğinden emin olmak için topluluktan kendi kendini denetlemesini/vazgeçmesini istiyoruz.Eğer yardımcı olursa, cüzdanınız işlem ücreti alıyorsa bu, yayınlanan içerik için sorumluluk anlamına gelir.
+
 b. Ekonomik olarak, bunlar tartışmaya açık sayılardır ve CAW'ın pratik dolar miktarını anlamamız için yapılandırılmıştır.
 1. $50 Milyon piyasa değeri (şu anki ya da yakın piyasa değeri)
 2. $1 Milyar piyasa değeri (tipik bir fiyatı biraz canlanan memecoinin piyasa değeri)
 3. $10 Milyar piyasa değeri (SHIB-gibi)
 
-Protokolü bir kere harekete geçirdikten sonra bir daha maliyeti değiştiremeyeceğimiz için CAW yakımının ölçeklenmesinin ne olacağı gerçeğinin farkında olmamız gerekecek.  CAW’ın gereken maliyet hesaplaması şöyledir:
+Protokolü bir kere harekete geçirdikten sonra bir daha maliyeti değiştiremeyeceğimiz için CAW yakımının ölçeklenmesinin ne olacağı gerçeğinin farkında olmamız gerekecek.CAW’ın gereken maliyet hesaplaması şöyledir:
 1. Bir CAW göndermenin CAW miktarı (stakerlere dağıtılanların tümü)
 2. Bir CAW’ı beğenmenin CAW miktarı (İÜ’ne dağıtılanlar) 
 3. Bir CAW’ı reCAW etmenin CAW miktarı (stakerlere ve İÜ’ne dağıtılan miktar)
@@ -86,7 +86,7 @@ c. Görüntü barındırma ve yönetme.
 
 2. Arayüzlerin, gönderilerin içine yerleştirilmiş harici kaynaklardan URL'ler oluşturması veya URL'lerin CAW'daki karakter sınırını bozmaması için kendi URL kısaltıcılarının kullanılması önerilir. 
 
-3. Örneğin şöyle bir CAW’ım olsaydı… “ @tk420 ile Point Road'da harika kızarmış balıklar yedim #ham #yemek #dost https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg” Bir arayüz, kullanıcılar göndermeden önce URL'yi 'https://c.aw/cawdev' gibi bir şekilde kısaltmalı ve URL'yi otomatik olarak bir snippet olarak oluşturmalıdır.
+3. Örneğin şöyle bir CAW’ım olsaydı… “ @tk420 ile Point Road'da harika kızarmış balıklar yedim #ham #yemek #dost https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg”Bir arayüz, kullanıcılar göndermeden önce URL'yi 'https://c.aw/cawdev' gibi bir şekilde kısaltmalı ve URL'yi otomatik olarak bir snippet olarak oluşturmalıdır.
 
 
 Sevgiyle, hâlâ hayal kuran biri. 

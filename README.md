@@ -9,6 +9,6 @@ Lightweight and fast static site to spread the word about CAW.
 
 
 ```bash 
-# run static server locally
+# run static site locally
 live-server --port=8080
 ```  
