@@ -1,0 +1,143 @@
+Manifest Zdecentralizowanej Społecznej Izby Rozliczeniowej ...(AKA) CAW 
+
+Dla niektórych z nas pojęcie decentralizacji zostało z czasem zagubione, 
+Ci którzy zapomnieli dlaczego bitcoin został stworzony, problem który mają rozwiązać kryptowaluty i blockchain.
+Bycie zdecentralizowanym oznacza, że nie ma pojedynczej osoby, podmiotu ani grupy która miałaby całkowitą kontrolę lub korzyści z systemu.
+
+W zdecentralizowanym systemie nie ma ani jednego podmiotu, który poprzez pragnienie lub perswazję mógłby w specyficzny sposób uszkodzić ten system.
+Zarówno w techniczny (tj. programista, który mógłby zatrzymać handel lub wyłączyć protokół poprzez użycie inteligentnych kontraktów) jak i finansowy sposób (podmiot który ma nieskończoną ilość tokenów i mógłby je zrzucić jeśli by chciał, ale zdecyduje się tego nie robić.)
+
+Nie oznacza to jednak, że właściwie zdecentralizowany system nie posiada `wielorybów` czy kamieni węgielnych.
+Zawsze są Ci, którzy poprzez swoją ciężką pracę lub entropię mają większy wpływ na sieć lub "całokształt".
+
+CAW powstało z niczego, nie było dewelopera, informacji, środka komunikacji. Po prostu. Kontrakt.
+
+Wolność dana ludziom aby odkryli znaczenie CAW miedzy sobą. Poszło dobrze, dlatego chcielibyśmy przedstawić Wam naszą specyfikację dla drugiej fazy CAW. Zanim jednak to zrobimy, niektóre rzeczy należy powiedzieć i wziąć pod uwagę:
+	
+	1. To jest tylko specyfikacja. Napisanie i wdrożenie protokołu należy do cawmmunity.
+	2. Zdecydowanie zaleca się utworzenie równej grupy w celu opracowania i rozwijania inteligentnych kontraktów.
+Z racji, iż nie ma lidera w tym procesie, wszelki typy będą próbowały przejąć prawo własności do procesu. Zawsze będą 
+"Ci pomocni", którzy będą twierdzić, że są w stanie "zrobić wszystko", ale napiszą idealny kod z idealnym backdoorem.
+Akceptowalny będzie jedynie sprawdzony i zaakceptowany przez cawmunity kontrakt na publicznym githubie.
+	3. Po wdrożeniu, wdrażający musi zrzec się wszelkich posiadanych kluczy do kontraktów. Nie będzie multi-sig, żadnych serwerów proxy, które można uaktualnić.
+Nie będzie miało znaczenia, kto wdrożył, ponieważ wszyscy będą równi ze wszystkimi, bez konkretnych korzyści ani przewagi. Po prostu stwórz kontrakt w odpowiedni sposób.
+
+Proponujemy:
+
+a. Protokół składający się z wielu inteligentnych kontraktów on-chain do publicznego wysyłania wiadomości lub p2p z maksymalnym limitem 420 znaków.
+b. Specyfikacja dla front-endów, z których wiele będzie zrobionych do interakcji z protokołem.
+
+Ogólne funkcje protokołu i jego kontraktów są następujące:
+
+I. Spalanie CAW poprzez kontrakt do wybijania NFT. Te spalone CAW zostaną wysłane do adresu 0x0. NFT będzie Twoją nazwą użytkownika.
+ a. Im mniejsza ilość znaków w Twojej nazwie użytkownika, tym większy jest koszt.
+ b. Każda nazwa użytkownika jest unikalna, i można użyć do niej znaków a-z oraz 0-9, bez znaków specjalnych (emotki, itp..,) czy też wielkich liter.
+
+II. Cała aktywność użytkownika, społeczne oraz finansowe ruchy są przypisane do nazwy użytkownika NFT. Ktokolwiek posiada to NFT ma dostęp do tego konta. Obejmuje to między innymi saldo CAW i dostęp do bezpośrednich wiadomości użytkownika (DMs).
+
+III. Posiadanie oraz zarządzenie NFT będzie odbywało się całkowicie on-chain. Na przykład rejestracja nazwy użytkownika "cawdev" będzie przechowywana bezpośrednio on-chain, wraz ze wszystkimi powiązanymi danymi. 
+
+IV. Posiadanie NFT (zanotuj - posiadanie, nie staking), upoważnia użytkownika do wpłacania oraz wypłacania CAW z portfela kontraktowego.
+Posiadanie NFT będzie służyć jako klucz do tego portfela. Użytkownicy korzystający z wielu NFT mogą określić poprzez unikalny numer, który z nich jest powiązany.
+
+V. Użytkownik może wydać CAW na protokole w następujący sposób:
+
+ i. Stworzenie CAW (podobne do tweetowania).
+   a. Koszt ten zostanie pobrany w CAW, a następnie rozłożony proporcjonalnie na wszystkich pozostałych stakerów.
+
+ ii. Polubienie cudzego CAW.
+   a. Jest to podobne do napiwków. Caw zostanie zabrane i wysłane bezpośrednio do portfela OP (osoby która stworzyła ów 
+      post).
+
+ iii. ReCAWing (podobny do retweeta).
+   a. Koszt zostanie pobrany w CAW i przesłany do portfela OP.
+
+VI. Do otrzymywania CAW przewidujemy w większości bezgazowy contract, w którym podpisy mogą pchąć bilans caw pomiędzy 
+     użytkowników i operacje w kontrakcie.
+	Jedyne działania na które użytkownik powinien wydać gaz to:
+	a. Wybijanie NFT
+	b. Wpłaty oraz wypłaty CAW.
+
+VII. Wiadomości bezpośrednie powinny być "darmowe" i wykonywane za pomocą systemu "trustless" pomiędzy dwoma kontami, aby umożliwić bezpieczną komunikację peer-to-peer.
+	Czaty grupowe spowodowałyby niepotrzebne komplikacje i nie są zalecane w tym momencie.
+
+VIII. Wszystkie dane będą przechowywane na stałe. Ze względu na ograniczenia sieci Ethereum, preferowane mogą być blockchainy Arweave lub podobne. 
+	Płynność CAW może zostać przeniesiona w pewnym momencie do QOMQQL1, ale decyzja zostanie podjęta dopiero gdy ujawnią się zalety techniczne i takie posunięcie będzie czymś oczywistym.
+
+	Przechowywanie danych musi być całkowicie trwałe i oparte na trustless. Znaczenie bycia zarówno odpornym na cenzurę, jak i samokontroli dla doskonalenia protokołu nie może być zawyżane. CAW ma dać Ci jedynie surowy zestaw narzędzi do budowania własnego internetowego społeczeństwa. Z tego powodu istnieje wyraźna luka pomiędzy samym protokołem a front-endami.
+
+W początkowej fazie, w kontraktach CAW dotyczących przechowywania danych i komunikacji można by publikować wszystko. Nie jesteśmy jednak naiwni i zdajemy sobie sprawę z tego co mogłoby być publikowane.
+W rezultacie to do front-endów należeć będzie ograniczanie treści, które mogłyby zamglić powód dla którego powstał CAW.
+
+Biorąc to pod uwagę, na poziomie protokołu żadna nazwa użytkownika czy wiadomość nie zostaną zablokowane ani poddane kwarantannie.
+Ze względu na charakter zrzeczenia się własności do smart kontraktów, nie będzie nikogo kto może ograniczyć takie treści.
+(Być może teraz wiesz, dlaczego rezygnacja z kontraktów zawierających multi-sig lub upgrady jest tak ważne).
+
+Teraz front-endy. Każdy może stworzyć lub hostować własny Front-end który będzie pokazywał lub ukrywał cokolwiek by chciał.
+Spodziewamy się, że będzie ich wiele działające jako rozszerzenia do aplikacji mobilnej i przeglądarki które służyć będą jako CAWing, portfel i platforma komunikatora internetowego która wykona sygnały szybko i niewidocznie tak, aby zapewnić płynniejszą komunikację (podpinanie metamask`a za każdym razem mogłoby być męczące).
+
+Zalecamy, aby społeczność stworzyła front-end w wersji alfa, który jest mniej lub bardziej "neutralny".
+Taki który może filtrować jawną nienawiść/przemoc, wraz z bardzo nielegalną działalnością. Pamiętaj, że najpierw musimy `zawładnąć` światem.
+Inni mogą mieć lepsze wyobrażenie tego, co powinno być pokazywane więc powinni mieć prawo do stworzenia i hostowania własnych front-endów.
+Chodzi o to, że CAW jest jak Twitter. Z tym wyjątkiem, że nie jest związany żadnymi prawami ani centralną kontrolą treści. Jednakże, front-endy mogą zdecydować się na moderowanie treści w dowolny sposób lub muszą dopasować wszystko tak jak wymagają tego przepisy prawne.
+
+Więc nawet jeśli jeden front-end Cię zablokuje, nie możesz być nadzorowany i nadal możesz korzystać z samego protokołu.
+
+Załącznik.
+
+a. Jest dość oczywiste, że ludzie zaczną kupować i sprzedawać NFT służące jako nazwy użytkowników.
+Byłoby mądrym posunięciem stworzenie rynku na zasadzie trustless, pozbawionego opłat służącego do takich transakcji (podobnego do Crypto Punk który jest pozbawiony opłat)
+To powiedziawszy, jesteśmy świadomi, że wraz ze wzrostem skali CAW, wielu nadal będzie korzystać z rynków zawierających opłaty, takich jak opensea i podobnych.
+Oznacza to, że deployer kontraktu odpowiedzialnego za wybijanie NFT, będzie miał techniczną możliwość do samodzielnego ustalenia opłat z Opensea.
+
+Nie uważamy tego za coś dobrego i prosimy społeczność o samokontrolę / odstąpienie, aby upewnić się, że opłaty transakcyjne nie są ustalane i wysyłane do prywatnego portfela.
+Jeśli to pomoże, oznacza to odpowiedzialność za opublikowane treści, jeśli Twój portfel otrzymuje opłaty transakcyjne.
+
+b. Z ekonomicznego punktu widzenia są to liczby otwarte do dyskusji i uporządkowane tak, abyśmy zrozumieli praktyczną wartość CAW w dolarach.
+
+I. 50 mln Kapitalizacji rynkowej (bliska lub obecna Kapitalizacja MC). 
+II. 1 mld Kapitalizacji rynkowej (typowa dla memowych coinów które zmierzają "na księżyc!" ). 
+III. 10 mld Kapitalizacji rynkowej (Podobna do SHIBY). 
+
+Musimy zdawać sobie sprawę z realiów tego, co będzie się działo podczas takiej skali spalania CAW, ponieważ nie będziemy mogli zmienić kosztu protokołu po jego uruchomieniu.
+
+Niezbędne kalkulacje kosztów w CAW to:
+
+I. Ilość CAW do wysyłania CAW (z której wszystko jest rozłożone pomiędzy stakerów).
+II. Ilość CAW do polubienia CAW. (Wysyłane do OP [oryginalnego twórcy postu])
+III. Ilość CAW do udostępnienia CAW (reCAW) (Rozłożona ilość na stakerów i OP).
+IV. Spalana kwota dla różnej długości nazwy użytkownika NFT (ilość znaków).
+
+Zrobiliśmy sporo matematycznych wyliczeń, aby wziąć pod uwagę poniższe liczby, ale być może coś przeoczyliśmy. 
+Zostało to obliczone w taki sposób, że polubienie, reCawing i publikowanie, jest zawsze przystępne cenowo przy Kapitalizacji wynoszącej 10 Miliardów, jednocześnie zapewniając, że rzadsze i krótsze nazwy użytkowników pozostaną cholernie drogie.
+
+Poniżej przedstawiono zalecany koszt wraz z szacowaną kwotą dolarów amerykańskich w nawiasach przy trzech docelowych kapitalizacjach (50 mln, 1 mld, 10 mld).
+
+- Nazwa użytkownika składająca się z jednego znaku (rzadkość!) Spalane 1,000,000,000,000 CAW ($89,985, $1,799,712, $17,997,120) 
+- Nazwa użytkownika składająca się z dwóch znaków - Spalane 240,000,000,000 CAW ($21,600, $432,000, $4,320,000)
+- Nazwa użytkownika składająca się z trzech znaków - Spalane 60,000,000,000 CAW ($5400, $108,000, $1,080,000) 
+- Nazwa użytkownika składająca się z czterech znaków - Spalane 6,000,000,000 CAW ($540, $10,800 $108,000)
+- Nazwa użytkownika składająca się z pięciu znaków - Spalane 200,000,000 CAW ($18, $360, $3600) 
+- Nazwa użytkownika składająca się z sześciu znaków - Spalane 20,000,000 CAW ($1.80, $36, $360)
+- Nazwa użytkownika składająca się z siedmiu znaków - Spalane 10,000,000 CAW (90c, $18, $180) 
+- Nazwa użytkownika składająca się z ośmiu znaków - Spalane 1,000,000 CAW (9c, $1.80, $18)
+
+- Obserwowanie konta (płatne w stosunku 80/20 dla owego konta i do puli stakepool) 30000 CAW (brak, $0.009, 9c)
+- Wysłanie Caw (maksymalnie xxx znaków) (płatne 100% do puli stakepool) 5000 CAW (brak, brak, 1.5c)
+- Polubienie CAW (płatne w stosunku 80/20 dla konta i do puli) 2000 CAW (brak, brak, $0.007)
+- ReCAW (płatne w stosunku 50/50 dla konta i do puli) 4000 CAW (brak, brak, 1.2c)
+
+c. Hosting obrazów i zarządzanie.
+
+I. Protokół nie będzie brał udziału w hostingu obrazów. Filtrowanie, wyświetlanie i hosting należy do front-endów.
+II. Zaleca się, aby front-endy renderowały adresy URL ze źródeł zewnętrznych umieszczane w postach, lub używały własnego skracacza linków URL po to aby adresy URL nie zmniejszały limitu znaków przy publikowaniu CAW.
+
+Na przykład, jeśli mój CAW to ... "Just had some great fried fish on Point Road with @tk420 #yum #foodie #bestfrens https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg" 
+
+Front-end powinien skrócić adres URL do czegoś takiego "https://c.aw/cawdev" przed opublikowaniem przez użytkowników i automatycznie renderować adres URL jako fragment.
+
+Pozdrawiam, ten który wciąż marzy.
+
+P.S. Nie ma oficjalnych serwisów społecznościowych, projektów partnerskich ani kolejnych wydań. 
+CAW jest zaprojektowane bez projektu, i do CAWMmunity należy kształtowanie CAW. 
+Jedynie dając Wam wizję i obserwując, co będzie dalej, możemy otrzymać naprawdę wolny i zdecentralizowany system.
