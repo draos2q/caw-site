@@ -1,0 +1,124 @@
+Manifesto per una Camera di Compensazione Social Decentralizzata (aka CAW)
+
+Il vero concetto di decentralizzazione è stato perso nel corso del tempo.
+Il reale motivo per cui è stato creato Bitcoin e le soluzioni che dovrebbero portare blockchain e criptovalute nella società attuale, sono stati dimenticati.
+Per sistema decentralizzato intendiamo qualcosa su cui nessuno, che sia una singola persona, un'entità o un gruppo, possono in alcun modo apportare manovre di controllo o beneficio personali.
+
+In un sistema decentralizzato non esiste nessuna entità che attraverso il desiderio o la persuasione, possano agire in autonomia in modo significativo.
+
+Questo sia da un punto di vista tecnico (ad esempio, uno sviluppatore che può bloccare il trading o disabilitare il protocollo attraverso l'uso di comandi sullo smart contract), sia dal punto di vista finanziario (ad esempio, un'entità che possiede n+1 (infiniti) token e che potrebbe scaricarli).
+Questo non vuol dire che un sistema decentralizzato sia del tutto privo di balene o di capisaldi propri. Ci sono in ogni caso entità che possono avere un impatto maggiore su una rete.
+
+CAW è nato dal nulla.Non c'era nessuno sviluppatore, nessuna informazione, nessun mezzo di comunicazione. Semplicemente, uno smart contract.
+
+E’ stata data la totale libertà alle persone di scoprire il significato di CAW confrontandosi in modo del tutto casuale tra loro. È andata bene e quindi vorremmo presentare le nostre specifiche per la seconda fase. Prima di farlo, alcune cose da precisare:
+ 	1. Questo è solo un manifesto, una visione. Spetta alla CAWmunity scrivere programmare e distribuire il protocollo.
+ 	2. Si raccomanda vivamente di formare un gruppo di sviluppatori per scrivere gli smart contracts.
+
+Molti proveranno a rivendicare la proprietà del progetto, ma è bene capire da subito che qui non esiste ne un leader ne un owner.
+Ci saranno molte persone disponibili a contribuire nello sviluppo che affermeranno di essere in grado di "fare tutto" e che potrebbero provare a sviluppare codice con una backdoor perfetta, quindi solo un contratto revisionato e accettato dalla comunità su GitHub pubblico sarà accettabile.
+ 	3. Dopo il lancio del contratto, il deployer deve rinunciare a tutte le chiavi in possesso.
+Non saranno presenti multi-sig, né proxy aggiornabili.
+ Non è importante chi effettuerà il deploy del contratto, perché saremo tutti uguali, senza alcun vantaggio o beneficio specifico. Basta che il contratto sia sviluppato correttamente pubblico e accettato.
+
+Proposta:
+
+a. Un protocollo composto da molti smart contract on-chain per inviare messaggi pubblicamente o p2p con un limite massimo di 420 caratteri.
+b. Una specifica per i frontend, che saranno numerosi, per interagire con questo protocollo.
+
+La funzione generale del protocollo e degli smart contract è la seguente:
+i. Burnare il token $CAW attraverso uno smart contract per mintare un NFT. I $CAW burnati andranno ad un wallet 0x0. L’NFT sarà il vostro nome utente.
+     a. Meno caratteri ci sono nel nome utente, più alto sarà il costo in termini di token $CAW da burnare.
+      b. Ogni nome utente è unico e può utilizzare le lettere a-z e 0-9, senza l'uso di caratteri speciali (emoji, ecc.) o lettere maiuscole.
+ 
+ ii. Tutte le attività degli utenti, sociali e finanziarie, passano attraverso il loro nome utente NFT. Chiunque sia il proprietario di questo NFT ha accesso a quell'account.
+ Ciò include, ma non solo, il saldo $CAW e l'accesso ai messaggi diretti (DM) dell'utente.
+ iii. La proprietà e la gestione degli NFT saranno completamente on-chain. Per esempio, la registrazione del nome utente "cawdev” sarà memorizzata direttamente sulla blockchain, insieme a tutti i dati associati.
+ iv. Detenere l'NFT (nota bene: detenerlo, non metterlo in staking) consente all'utente di depositare o prelevare CAW in un portafoglio di smart contracts.
+        La proprietà dell'NFT servirà come chiave di accesso a questo portafoglio.
+        Gli utenti che utilizzano più NFT possono specificare quali per avere un numero unico associato.
+ 
+ v. Un utente può spendere $CAW nei seguenti modi:
+  i. Postare un CAW (simile a un Tweet).
+    a. Questo costo sarà preso in $CAW e distribuito proporzionalmente a tutti gli staker.
+  ii. Mettere "Mi piace" a un CAW altrui.
+    a. Simile ad una mancia. I $CAW vengono prelevati e inviati direttamente al portafoglio dell’autore del CAW.
+ iii. ReCAWing (simile a un retweet).
+    a. Il costo di questa operazione viene prelevato in $CAW e inviato al portafoglio dell’autore del CAW. 
+ vi. Per i CAW prevediamo un contratto senza spesa in termini di gas
+    Le uniche due cose per cui verrà richiesta una spesa in gas sono:
+    a. Il mint di un NFT nome utente.
+    b. Il deposito o prelievo di $CAW.
+ 
+ vii. I DM(messaggi privati) dovrebbero essere "gratis" ed eseguiti tramite una stretta di mano consensuale tra due contratti per consentire una messaggistica peer-to-peer sicura.
+   Le chat di gruppo apporterebbero una complessità non necessaria e non sono raccomandate in questo momento.
+ 
+ viii. Tutti i dati saranno memorizzati in modo permanente. A causa di alcuni limiti della rete Ethereum, si potrebbe preferire Arweave o blockchain simili. La liquidità di $CAW potrebbe essere migrata verso il layer 1 QOMQQL1, ma la questione sarà gestita ed affrontata in un secondo momento, quando i tecnicismi saranno ad un punto adeguato.
+    L'archiviazione dei dati deve essere completamente trustless e permanente.
+    CAW è stato concepito all’unico scopo di fornire un kit di strumenti utili per la costruzione del vostro social online.
+    Esiste un netto divario tra il protocollo backend ed i frontend.
+    Al livello di base, gli smart contract CAW per l'archiviazione e la comunicazione dei dati trustless, consentono la pubblicazione di contenuto senza limiti di censura. Detto questo, non siamo ingenui e sappiamo cosa può essere pubblicato e cosa no.
+    Sarà il frontend a dover limitare i contenuti che non possono essere pubblicati.
+    A livello di protocollo nessun nome utente o messaggio sarà bloccato o messo in ban.
+    A causa della rinuncia alla proprietà degli smart contract, non ci sarà nessuno che potrà manualmente inserire limitazioni a priori per tali contenuti.
+    (forse ora capite perché è importante la rinuncia al contratto senza multi-sig o aggiornamenti).
+ 
+Frontend
+
+Chiunque è libero di creare/ospitare il proprio frontend su cui mostrerà tutto ciò che vuole (o non vuole).
+Ci aspettiamo che ce ne siano molti, con l'obiettivo di creare un'applicazione mobile e un'estensione del browser che funga da piattaforma di cawing/wallet e di messaggistica istantanea, che esegua le firme in modo veloce ed invisibile in termini di ux per offrire un'esperienza di messaggistica fluida (firmare un messaggio metamask ogni volta può essere fastidioso).
+ Raccomandiamo alla community di creare un frontend alfa, che sia più o meno "neutrale".
+Potrebbe filtrare parole di odio/violenza palese, insieme alle attività illegali, ricordando che dobbiamo prima conquistare il mondo.
+Altri potrebbero avere un'idea migliore di ciò che dovrebbe essere mostrato, sarà loro prerogativa quella di creare e ospitare il proprio frontend.
+Il punto è che CAW è come Twitter. Solo che non è vincolato da leggi, né da una moderazione centrale dei contenuti.
+Tuttavia, i frontend possono scegliere di moderare i contenuti come preferisco ma devono adattarsi ad alcune linee guida legali necessarie di base.
+Quindi, anche se un frontend vi blocca, non potete essere controllati centralmente e siete ancora liberi di usare il protocollo su altri frontend.
+ 
+Appendice.
+ 
+a. È abbastanza ovvio che gli individui cominceranno a comprare e vendere i nomi utente NFT.
+Sarebbe saggio da parte di un membro della comunità creare un market trustless per questi scambi, simile agli scambi di Crypto Punk.
+Siiamo abbastanza consapevoli del fatto che quando CAW scalerà, molti useranno ancora i marketplace FEE come Opensea. A tal proposito chi deployerà il contratto che minta NFTs, deve avere la capacità tecnica di fissare le commissioni di Opensea.
+Non riteniamo che questa sia una buonissima cosa e pertanto chiediamo alla community di vigilare al fine di essere sicuri del fatto che le commissioni di compra/vendita non siano impostate per essere inviate ad un wallet privato.
+ 
+b. Dal punto di vista economico, questi sono i numeri su cui dibattere e strutturati in modo da comprendere l'importo in dollari di CAW.
+ 
+    i. 50 milioni di market cap (MC prossimo o attuale).
+    ii. 1 miliardo di market cap (MC tipico mooning di memecoin).
+    iii. 10 miliardi di market cap (simile a SHIB).
+        Dovremo essere da subito consapevoli di ciò che accadrà man mano che il burn di CAW aumenterà, poiché non avremo più la possibilità di modificare i vari costi del protocollo una volta deployato il contratto.
+ 
+ I calcoli dei costi necessari in CAW riguardano:
+    i. Costo in $CAW per ogni CAW inviato (distribuiti agli staker).
+    ii. Costo in $CAW per ogni like ai CAW. (inviato all'autore del caw).
+    iii. Costo in  $CAW per reCAW di un CAW (distribuito ad autore del caw e agli staker).
+    iv. Quantità di $CAW da burnare a seconda della lunghezza degli username NFT che verranno comprati
+        Abbiamo fatto un bel po' di calcoli per considerare i seguenti numeri, ma potrebbe esserci sfuggito qualcosa.
+        Il calcolo è stato fatto in modo tale che i like, i reCAWing e i post siano sempre accessibili con un MarketCap di 10B, ma garantendo tuttavia che gli NFT nome utente più rari, più corti ecc rimangano dannatamente costosi.
+        Di seguito è riportato il costo consigliato, insieme all'importo stimato in $  tra parentesi ai tre MC target (50 mln, 1 mld, 10 mld).
+ 
+        - Nome utente ad un solo carattere (raro!) BURN 1.000.000.000.000 ($89.985, $1.799.712, $17.997.120)
+        - Nome utente 2 caratteri - BURN 240.000.000.000 CAW ($21.600, $432.000, $4.320.000)
+        - Nome utente 3 caratteri - BURN 60.000.000.000 CAW ($5400, $108.000, $1.080.000)
+        - Nome utente 4 caratteri - BURN 6.000.000.000 CAW ($540, $10.800 $108.000)
+        - Nome utente 5 caratteri - BURN 200.000.000 CAW ($18, $360, $3600)
+        - Nome utente 6 caratteri - BURN 20.000.000 CAW ($1,80, $36, $360)
+        - Nome utente 7 caratteri - BURN 10.000.000 CAW (90c, 18$, 180$)
+        - Nome utente 8 caratteri - BURN 1.000.000 CAW (9c, $1,80, $18)
+        
+        - Follow un account (pagato 80/20 per account e stakepool) 30000 (na,0.009,9c)
+        - Invia una CAW (max xxx caratteri) (pagato 100 allo stakepool) 5000 (na, na, 1,5c)
+        - Like a un CAW (pagata 80/20 al conto e allo stakepool) 2000 (na,na, $0,007)
+        - ReCAW (pagato 50/50 al conto e allo stakepool) 4000 (na,na,1.2c)
+ 
+c. Hosting e gestione delle immagini.
+
+    i. Il protocollo non sarà coinvolto nell'hosting delle immagini. Sarà compito dei frontend filtrare, visualizzare e ospitare le immagini.
+    ii. Si raccomanda che i frontend abbiano la possibilità di inserire post da URL esterni o che abbiano la possibilità di utilizzare uno shortly di url per non superare i 420 caratteri consentiti.
+    Ad esempio, se il mio CAW fosse ... "Ho appena mangiato dell'ottimo pesce fritto a Point Road con @tk420 #yum #foodie #bestfrens https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg"
+    Il frontend dovrebbe accorciare l'URL a qualcosa come "https://c.aw/cawdev" prima che l'utente pubblichi il messaggio, e rendere automaticamente l'URL snippet.
+    Con affetto, un ragazzo che sogna ancora.
+ 
+P.S. Non esistono social ufficiali, né progetti partner o ulteriori rilasci.
+CAW è un progetto senza progetto e spetta alla CAWMunity dare forma a CAW.
+Solo partendo da una visione e lasciando al fato che le cose si muovano in modo autonomo potremo avere un sistema veramente libero e decentralizzato.
