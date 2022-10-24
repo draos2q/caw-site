@@ -1,6 +1,7 @@
 
 const dropdownLang = document.getElementById('dropdown-lang');
 const lang = localStorage.getItem('lang') || 'en';
+let i18n_en = null;
 
 //* Map element id to dictionary key on i18n file
 const mappedElements = [
@@ -20,6 +21,11 @@ async function loadTranlation(lang, desc) {
 
     lang = (lang || 'en').toLowerCase();
     const file = `./assets/lang/manifesto.${lang}.txt`;
+
+    //* Load default language to be used as fallback when a language is incomplete
+    if (lang !== 'en')
+        await loadLabels('en');
+
     await loadLabels(lang);
 
     fetch(file)
@@ -48,6 +54,9 @@ async function loadLabels(lang) {
         const resp = await fetch(`./assets/lang/i18n.${lang}.json`);
         const i18n = await resp.json();
 
+        if (!i18n_en && lang === 'en')
+            i18n_en = i18n;
+
         mappedElements.forEach(x => setText(i18n, x.elId, x.key));
     }
     catch (error) {
@@ -61,7 +70,7 @@ function setText(i18n, elId, dicKey) {
 
     const el = document.getElementById(elId);
     if (el)
-        el.innerText = i18n[ dicKey ] || el.innerText || '';
+        el.innerText = i18n[ dicKey ] || i18n_en?.[ dicKey ] || el.innerText || '';
 }
 
 function setLang(lang) {
