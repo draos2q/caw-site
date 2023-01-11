@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-title" content="CAW" />
     <meta name="apple-mobile-web-app-status-bar-style" content="dark" />
     <meta name="theme-color" content="dark" />
-    
+
     <meta property="al:android:url" content="http://caw.is">
     <meta property="al:android:app_name" content="CAW - The Future of Decentralized Social Media">
     <meta property="al:android:package" content="http://caw.is">
@@ -54,15 +54,25 @@
     <meta name="msapplication-TileImage" content="./assets/images/270x270.png" />
 </head>
 
-<body class="dark:bg-gray-800 dark:text-gray-200 py-5">
-    <nav class="bg-white border-gray-200 px- bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+<body class="dark:bg-gray-900 dark:text-gray-200 py-0">
+    <nav id="navbar" class="border-gray-200 bg-gray-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
             <a href="#" class="flex" data-tooltip-target="tooltip-caw-logo">
                 <img src="./assets/images/180x180.png" alt="logo" class="w-8 h-8 mr-2">
                 <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">CAW</span>
             </a>
-            <div class="flex md:order-2">
+            <div class="flex md:order-2 gap-4">
 
+                <a href="https://birdseason-crows.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex justify-center items-center text-base font-medium text-gray-800 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white p-5">
+                    <span class="w-full font-bold uppercase">Launch dApp</span>
+                    <svg aria-hidden="true" class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
                 <!-- Dark mode switcher -->
                 <button id="theme-toggle" type="button" data-tooltip-target="tooltip-theme-mode"
                     aria-label="change-theme-mode"
@@ -78,6 +88,8 @@
                             fill-rule="evenodd" clip-rule="evenodd"></path>
                     </svg>
                 </button>
+
+
                 <!-- Dark mode switcher end -->
 
                 <button data-collapse-toggle="mobile-menu-4" type="button" aria-label="toogle-mobile-menu"
@@ -102,8 +114,7 @@
                     <li>
                         <a href="https://github.com/cawdevelopment" target="_blank" rel="noopener noreferrer nofollow"
                             class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded dark:text-white light:text-gray-500"
-                            style="padding: 15px;"
-                            aria-current="page">Github</a>
+                            style="padding: 15px;" aria-current="page">Github</a>
                     </li>
                     <li>
                         <a href="https://www.coingecko.com/en/coins/a-hunters-dream" target="_blank"
@@ -229,7 +240,7 @@
             </a>
         </p>
         <h2 id="caw-subtitle-manifesto" class="text-2xl text-center dark:text-gray-200 light:text-gray-700 ltr:ml-3 rtl:mr-3">
-                The CAW Manifesto :
+            The CAW Manifesto :
         </h2>
         <p class="text-center dark:text-gray-200 light:text-gray-700 m-10 p-10">
             <a id="link-original-manifesto" href="https://pastebin.com/yhcajZq0" target="_blank" rel="noopener">
